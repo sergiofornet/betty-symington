@@ -1,6 +1,6 @@
 function handleVisibilityChange() {
 	if (document.hidden) {
-		document.title = '🕳️ hello? I\'m still here...';
+		document.title = 'hello? 🕳️ I\'m still here...';
 	} else {
 		document.title = 'betty symington // frontend developer';
 	}
