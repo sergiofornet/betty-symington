@@ -1,0 +1,44 @@
+{
+	"name": "betty-symington",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "parcel ./src/index.html",
+		"build": "parcel build ./src/index.html --public-url ./ --out-dir build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sergiofornet/betty-symington.git"
+	},
+	"author": "Betty Symington",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sergiofornet/betty-symington/issues"
+	},
+	"homepage": "https://github.com/sergiofornet/betty-symington#readme",
+	"devDependencies": {
+		"babel-eslint": "^9.0.0",
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb": "^17.1.1",
+		"eslint-config-prettier": "^4.3.0",
+		"eslint-config-wesbos": "0.0.19",
+		"eslint-plugin-html": "^5.0.5",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-react": "^7.18.3",
+		"eslint-plugin-react-hooks": "^1.7.0",
+		"parcel-bundler": "^1.12.4",
+		"prettier": "^1.19.1",
+		"sass": "^1.26.2"
+	},
+	"dependencies": {
+		"moveto": "^1.8.2",
+		"waait": "^1.0.5"
+	},
+	"browserslist": [
+		"last 2 Chrome versions",
+		"last 2 Firefox versions"
+	]
+}
