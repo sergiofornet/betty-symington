@@ -4,6 +4,10 @@
 node_modules/
 /node_modules/
 
+# Parcel #
+#########
+.cache/
+
 # Packages #
 ############
 *.7z
@@ -41,6 +45,8 @@ Thumbs.db
 # Compiled Files and Build Dirs #
 ##########
 /README.html
+build/
+dist/
 
 # npm error reports #
 ####################
