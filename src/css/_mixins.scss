@@ -1,0 +1,47 @@
+// Media queries
+// Small tablets and large smartphones (landscape view)
+$sm-min: 30em;
+
+// Small tablets (portrait view)
+$md-min: 48em;
+
+// Tablets and small desktops
+$lg-min: 64em;
+
+// Large tablets and desktops
+$xl-min: 80em;
+
+// Small devices
+@mixin small {
+	@media (min-width: #{$sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin medium {
+	@media (min-width: #{$md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin large {
+	@media (min-width: #{$lg-min}) {
+		@content;
+	}
+}
+
+ // Extra large devices
+@mixin huge {
+	@media (min-width: #{$xl-min}) {
+		@content;
+	}
+}
+
+ // Custom devices
+@mixin rwd($screen) {
+	@media (min-width: $screen+'em') {
+		@content;
+	}
+}

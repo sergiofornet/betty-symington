@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#0000ee">
+		<title>betty symington // frontend developer</title>
+		<meta name="description" content="Betty Symington, frontend developer. Stuff. Things.">
+		<link href="./css/style.scss" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<section id="playground">
+			<div class="clock text">
+				<span class="clock__hours">00</span>:<span class="clock__minutes">00</span>:<span
+					class="clock__seconds">00</span>
+			</div>
+			<div class="arrow arrow--down">
+				<div><a href="#info" class="js-trigger" aria-label="arrow down">⬇︎</a></div>
+			</div>
+		</section>
+		<section id="info">
+			<div class="text info">
+				<div class="info__up"><span><a href="#playground" class="js-trigger" title="go back to the playground"
+							aria-label="Index Pointing Up emoji">☝️</a></span><span>that is the playground. Today
+						there is a clock in there. Tomorrow i don't know, probably still a clock</span></div>
+				<div class="info__middle">
+					<h1><span class="betty">my name is Betty Symington.</span> I do frontend stuff
+					</h1>
+				</div>
+				<div class="info__down"><span>these are the things i do for a living or fun or
+						both</span><span><a href="#work" class="js-trigger"
+							aria-label="Backhand Index Pointing Down emoji">👇</a></span></div>
+			</div>
+		</section>
+		<section id="work">
+			<div class="arrow arrow--up">
+				<div><a href="#info" class="js-trigger" aria-label="arrow up">⬆︎</a></div>
+			</div>
+			<ul class="text text--alt works-list">
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="http://estayelotro.com" title="ésta y el otro" target="_blank"
+							rel="noopener noreferrer">ésta y el otro</a>
+						<p class="work__description">HTML - CSS - php - JavaScript - GSAP // <span
+								class="work__description--alt">2017+2018+2019+2020</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="https://turismoverite.com" title="turismo vérité" target="_blank"
+							rel="noopener noreferrer">turismo vérité</a>
+						<p class="work__description">WordPress - WooCommerce - HTML - CSS - php // <span
+								class="work__description--alt">2018</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="http://dneuwork.com" title="dneuwork" target="_blank"
+							rel="noopener noreferrer">dneuwork</a>
+						<p class="work__description">HTML - CSS - php - JavaScript // <span
+								class="work__description--alt">2017</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="https://losponys.com" title="loS PonYS" target="_blank"
+							rel="noopener noreferrer">loS PonYS</a>
+						<p class="work__description">WordPress - WooCommerce - HTML - CSS - php - 👕🖌️ // <span
+								class="work__description--alt">2018</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="https://clinicagalena.com" target="_blank"
+							rel="nofollow noopener noreferrer" title="Clínica Galena">Clínica Galena</a>
+						<p class="work__description">UI - prototyping - WordPress - HTML - CSS - php - <a
+								href="https://bitbucket.org/sergiofornet/galena-blocks/" target="_blank"
+								rel="noreferrer noopener">Gutenberg</a> - seo // <span
+								class="work__description--alt">2018 - 2019</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="https://www.fpclaudiogaleno.es" target="_blank"
+							rel="nofollow noopener noreferrer">FP Claudio Galeno</a>
+						<p class="work__description">UI - prototyping - WordPress - HTML - CSS - php - seo //
+							<span class="work__description--alt">2018 - 2019</span></p>
+					</div>
+				</li>
+				<li class="works-list__item">
+					<div class="work">
+						<a class="work__link" href="https://www.fponlineclaudiogaleno.es" target="_blank"
+							rel="nofollow noopener noreferrer">FP Online Claudio Galeno</a>
+						<p class="work__description">UI - prototyping - WordPress - HTML - CSS - php - seo //
+							<span class="work__description--alt">2018 - 2019</span></p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<div id="contact">
+			<a href="mailto:contact@betty-symington.xyz?subject=we%20need%20to%20talk" target="_blank"
+				title="we can talk" aria-label="we can talk">💌</a>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+
+</html>
