@@ -5,6 +5,7 @@
 	font-size: 100%;
 	--timeBackground: hsl(0, 100%, 100%);
 	--blue: rgb(0, 0, 238);
+	--yellow: rgb(255, 225, 16);
 }
 
 body {
@@ -46,7 +47,7 @@ a:focus {
 	}
 
 	.works-list & {
-		color: white;
+		color: black;
 	}
 
 }
@@ -75,8 +76,13 @@ a:hover {
 
 .work__description--alt {
 	padding: 0 .2em;
-	color: var(--blue);
-	background-color: white;
+	color: var(--yellow);
+	background-color: black;
+
+	&::selection {
+		color: black;
+		background-color: var(--yellow);
+	}
 }
 
 .my-element {
@@ -110,7 +116,7 @@ section {
 	}
 
 	&#work {
-		background-color: var(--blue);
+		background-color: var(--yellow);
 	}
 
 }
@@ -150,12 +156,12 @@ section {
 	}
 
 	&--alt {
-		color: white;
+		color: black;
 		max-width: 1200px;
 
 		::selection {
-			color: var(--blue);
-			background-color: white;
+			color: var(--yellow);
+			background-color: black;
 		}
 	}
 }
@@ -189,7 +195,8 @@ section {
 	transform: translateX(-50%);
 
 	&--up {
-		top:0; color:white;
+		top:0;
+		color: black;
 	}
 
 	&--down {
