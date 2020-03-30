@@ -137,7 +137,7 @@ section {
 		text-decoration: none;
 		color:black;
 
-		&:hover, &:active, &:focus {
+		&:hover, &:active, &:focus, &::selection {
 			background-color: var(--blue);
 		}
 	}
@@ -197,6 +197,11 @@ section {
 	&--up {
 		top:0;
 		color: black;
+
+		::selection {
+			color: var(--yellow);
+			background-color: black;
+		}
 	}
 
 	&--down {
@@ -205,6 +210,11 @@ section {
 		background-color: white;
 		mix-blend-mode: multiply;
 		transition: all 5s linear;
+
+		::selection {
+			color: white;
+			background-color: var(--timeBackground);
+		}
 	}
 }
 
