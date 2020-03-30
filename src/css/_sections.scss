@@ -10,7 +10,7 @@
 	font-size: 3rem;
 	mix-blend-mode: exclusion;
 
-	& a {
+	a {
 		text-decoration: none;
 		color:black;
 
@@ -95,37 +95,7 @@
 	}
 }
 
-.arrow {
-	position:absolute;
-	margin-left: 50%;
-	transform: translateX(-50%);
-
-	&--up {
-		top:0;
-		color: black;
-
-		::selection {
-			color: var(--yellow);
-			background-color: black;
-		}
-	}
-
-	&--down {
-		bottom:0;
-		color:var(--timeBackground);
-		background-color: white;
-		mix-blend-mode: multiply;
-		transition: all 5s linear;
-
-		::selection {
-			color: white;
-			background-color: var(--timeBackground);
-		}
-	}
-}
-
 .info {
-
 	text-align: center;
 
 	&__up > *, &__down > * {
@@ -139,14 +109,12 @@
 
 }
 
-.highlight {
-	&.betty {
-		transform: skew(-10deg, -4deg);
-	}
-}
-
 .betty {
 	display: inline-block;
+
+	&.highlight {
+		transform: skew(-10deg, -4deg);
+	}
 }
 
 .betty-img {
