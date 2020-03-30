@@ -85,11 +85,6 @@ a:hover {
 	}
 }
 
-.my-element {
-	height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-	height: calc(var(--vh, 1vh) * 100);
-}
-
 section {
 	position: relative;
 	display: grid;
