@@ -1,0 +1,168 @@
+#contact {
+	display: block;
+	position: fixed;
+	left: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	color: var(--blue);
+	top: calc(50vh - 1.5rem);
+	z-index: 2;
+	font-size: 3rem;
+	mix-blend-mode: exclusion;
+
+	& a {
+		text-decoration: none;
+		color:black;
+
+		&:hover, &:active, &:focus, &::selection {
+			background-color: var(--blue);
+		}
+	}
+}
+
+.text {
+	color: var(--blue);
+	font-size: 2rem;
+	font-weight: 400;
+	max-width: 800px;
+
+	::selection {
+		color: white;
+		background-color: var(--blue);
+
+	}
+
+	&--alt {
+		color: black;
+		max-width: 1200px;
+
+		::selection {
+			color: var(--yellow);
+			background-color: black;
+		}
+	}
+}
+
+.works-list__item {
+	margin-bottom: 2em;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.work__link {
+	font-weight: 400;
+}
+
+.work__description {
+	font-size: 1.2rem;
+	line-height: 1.4;
+	margin: .2em 0 1em;
+}
+
+.work__description--alt {
+	padding: 0 .2em;
+	color: black;
+	background-color: white;
+
+	&::selection {
+		color: black;
+		background-color: var(--yellow);
+	}
+}
+
+.clock {
+	color: var(--timeBackground);
+	mix-blend-mode: multiply;
+	transition: color 5s linear;
+
+	& ::selection, &::selection {
+		background-color: var(--timeBackground);
+		color: white;
+	}
+}
+
+
+.change {
+	background-color: var(--timeBackground);
+	color: white;
+	transition: all 250ms ease-in-out;
+
+	&::selection {
+		background-color: white;
+		color: var(--timeBackground);
+	}
+}
+
+.arrow {
+	position:absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+	&--up {
+		top:0;
+		color: black;
+
+		::selection {
+			color: var(--yellow);
+			background-color: black;
+		}
+	}
+
+	&--down {
+		bottom:0;
+		color:var(--timeBackground);
+		background-color: white;
+		mix-blend-mode: multiply;
+		transition: all 5s linear;
+
+		::selection {
+			color: white;
+			background-color: var(--timeBackground);
+		}
+	}
+}
+
+.info {
+
+	text-align: center;
+
+	&__up > *, &__down > * {
+		display: block;
+	}
+
+
+	&__middle {
+		margin: 3em 0;
+	}
+
+}
+
+.highlight {
+	&.betty {
+		transform: skew(-10deg, -4deg);
+	}
+}
+
+.betty {
+	display: inline-block;
+}
+
+.betty-img {
+	position: absolute;
+	left: 0;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+	width: calc(100% - 20px);
+
+	&.hidden {
+		display: none;
+	}
+
+	& img {
+		width: 100%;
+		display: block;
+	}
+}

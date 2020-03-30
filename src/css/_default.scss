@@ -1,0 +1,85 @@
+:root {
+	font-size: 100%;
+	--timeBackground: hsl(0, 100%, 100%);
+	--blue: rgb(0, 0, 238);
+	--yellow: rgb(255, 225, 16);
+}
+
+body {
+	font-size: 2rem;
+	font-family: 'Fira Code', monospace;
+}
+
+@supports (font-variation-settings: normal) {
+	body {
+		font-family: 'Fira Code VF', monospace;
+	}
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+
+	& li {
+		list-style-type: none;
+	}
+}
+
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+	color: var(--blue);
+
+	&.js-trigger {
+		text-decoration: none; color: inherit;
+	}
+
+	.works-list & {
+		color: black;
+	}
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+section {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 6em);
+	min-height: calc((var(--vh, 1vh) * 100) - 6em);
+	margin: 0;
+	z-index: 3;
+
+	padding: 3em 0;
+
+	& > * {
+		margin: 2rem calc(10rem / 16);
+	}
+
+	&#playground {
+		background-color: var(--timeBackground);
+		transition: background-color 5s linear;
+	}
+
+	&#info {
+		z-index:1;
+	}
+
+	&#work {
+		background-color: var(--yellow);
+	}
+
+}
