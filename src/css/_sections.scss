@@ -51,19 +51,63 @@
 	}
 }
 
-.work__link {
-	font-weight: 400;
-	text-decoration: 2px underline;
+.work__title {
+	margin: 0;
+	
+	a.title__link {
+		font-weight: 400;
+		text-decoration: none;
+		background-color: black;
+		color: var(--yellow);
+		padding: 0 .2em;
+
+		&:hover {
+			color: black;
+			background-color: white;
+		}
+
+		&.title__link--dead {
+			text-decoration: line-through solid 3px;
+			pointer-events: none;
+		}
+	}
+
+	.title__year	{
+		font-size: .6em;
+		vertical-align: bottom;
+		line-height: 1.1;
+		padding: 0 .2em;
+		color: black;
+		background-color: white;
+
+		&::selection {
+			color: black;
+			background-color: var(--yellow);
+		}
+	}
 }
 
-.work__link--dead {
+a.work__link {
+	font-weight: 400;
+	text-decoration: none;
+	background-color: black;
+	color: var(--yellow);
+	padding: 0 .2em;
+
+	&:hover {
+		background-color: white;
+		color: black;
+	}
+}
+
+a.work__link--dead {
 	text-decoration: 3px line-through;
 }
 
 .work__description {
 	font-size: 1.2rem;
 	line-height: 1.4;
-	margin: .2em 0 1em;
+	margin: .5em 0 0;
 }
 
 .work__description--alt {
@@ -74,6 +118,20 @@
 	&::selection {
 		color: black;
 		background-color: var(--yellow);
+	}
+}
+
+.work__design {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	margin: .2em 0 0;
+
+	a {
+		text-decoration: 1px dashed underline;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 
