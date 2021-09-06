@@ -45,7 +45,7 @@
 
 .works-list__item {
 	margin-bottom: 2em;
-
+	
 	&:last-of-type {
 		margin-bottom: 0;
 	}
@@ -53,7 +53,19 @@
 
 .work__title {
 	margin: 0;
-	
+
+	.title__github {
+		width: 0.73em;
+		display: inline-block;
+		
+		& > img {
+			width: 100%;
+			height: auto;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+
 	a.title__link {
 		font-weight: 400;
 		text-decoration: none;
@@ -108,6 +120,7 @@ a.work__link--dead {
 	font-size: 1.2rem;
 	line-height: 1.4;
 	margin: .5em 0 0;
+
 }
 
 .work__description--alt {
