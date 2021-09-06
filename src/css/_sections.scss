@@ -57,6 +57,10 @@
 	.title__github {
 		width: 0.73em;
 		display: inline-block;
+
+		&:hover {
+			filter: invert(100%) brightness(200%);
+		}
 		
 		& > img {
 			width: 100%;
