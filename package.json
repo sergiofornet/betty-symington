@@ -20,7 +20,7 @@
 	},
 	"homepage": "https://github.com/sergiofornet/betty-symington#readme",
 	"devDependencies": {
-		"@parcel/transformer-sass": "^2.0.0-rc.0",
+		"@parcel/transformer-sass": "^2.8.2",
 		"babel-eslint": "^9.0.0",
 		"eslint": "^5.16.0",
 		"eslint-config-airbnb": "^17.1.1",
